@@ -12,7 +12,7 @@ docker-compose up --build
 
 
 ## Issues
-This projects issues are handle in the respective (Trello Board)[https://trello.com/b/Y07LkYKr/writtensalescom]
+This projects issues are handle in the respective [Trello Board](https://trello.com/b/Y07LkYKr/writtensalescom)
 
 
 ## License
