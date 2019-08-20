@@ -1,0 +1,37 @@
+# https://hackernoon.com/a-better-way-to-develop-node-js-with-docker-cd29d3a0093
+
+version: '3.7'
+
+networks: {writtensalesbackend: {}}
+
+services: 
+  # Backend API Service
+  api:
+    build:
+      args:
+        - node_version=12.5.0-alpine
+      context: ./api
+      dockerfile: ./Dockerfile
+    env_file:
+      - ./api/.env.docker
+    restart: unless-stopped
+    volumes:
+      - ./api:/usr/src/app
+      - /usr/src/app/node_modules
+    working_dir: /usr/src/app
+    ports:
+      - 9000:80
+    networks:
+      - writtensalesbackend
+  
+  db:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - ./db:/data/db
+      - ./conf/mongo-config:/data/configdb
+ 
+volumes:
+  db:
+  mongo-config:
