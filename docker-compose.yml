@@ -6,26 +6,31 @@ networks: {writtensalesbackend: {}}
 
 services: 
   # Backend API Service
-  api:
-    build:
-      args:
-        - node_version=12.5.0-alpine
-      context: ./api
-      dockerfile: ./Dockerfile
-    env_file:
-      - ./api/.env.docker
-    restart: unless-stopped
-    volumes:
-      - ./api:/usr/src/app
-      - /usr/src/app/node_modules
-    working_dir: /usr/src/app
-    ports:
-      - 9000:80
-    networks:
-      - writtensalesbackend
+  # api:
+  #   build:
+  #     args:
+  #       - node_version=12.5.0-alpine
+  #     context: ./api
+  #     dockerfile: ./Dockerfile
+  #   env_file:
+  #     - ./api/.env.docker
+  #   restart: unless-stopped
+  #   volumes:
+  #     - ./api:/usr/src/app
+  #     - /usr/src/app/node_modules
+  #   working_dir: /usr/src/app
+  #   ports:
+  #     - 9000:80
+  #   networks:
+  #     - writtensalesbackend
+  #   depends_on:
+  #     - db
   
   db:
-    image: mongo:latest
+    image: mongo:4.2
+    restart: unless-stopped
+    env_file:
+      - ./db/.env.docker
     ports:
       - 27017:27017
     environment:
@@ -34,7 +39,3 @@ services:
       MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE:-writtensales}
       MONGO_NON_ROOT_USERNAME: ${MONGO_NON_ROOT_USERNAME:-ws}
       MONGO_NON_ROOT_PASSWORD: ${MONGO_NON_ROOT_PASSWORD:-wspass}
- 
-volumes:
-  db:
-  mongo-config:
