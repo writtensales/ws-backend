@@ -34,5 +34,37 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "user": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "campaign": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "category": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "research": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "template": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "bundle": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "version": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "code": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

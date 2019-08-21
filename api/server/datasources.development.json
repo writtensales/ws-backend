@@ -4,13 +4,13 @@
       "connector": "memory"
     },
     "mongodb": {
-      "host": "localhost",
+      "host": "127.0.0.1",
       "port": 27017,
       "url": "",
       "database": "writtensales",
-      "password": "wspass",
+      "password": "",
       "name": "mongodb",
-      "user": "ws",
+      "user": "",
       "useNewUrlParser": true,
       "connector": "mongodb"
     }
