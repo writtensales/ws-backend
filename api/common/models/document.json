@@ -1,6 +1,6 @@
 {
-  "name": "template",
-  "plural": "templates",
+  "name": "document",
+  "plural": "documents",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -14,7 +14,12 @@
     "video_url": {
       "type": "string"
     },
-    "copy": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "default": "template"
+    },
+    "text": {
       "type": "string"
     }
   },

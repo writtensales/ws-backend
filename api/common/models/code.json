@@ -29,6 +29,11 @@
       "type": "hasOne",
       "model": "research",
       "foreignKey": ""
+    },
+    "document": {
+      "type": "belongsTo",
+      "model": "document",
+      "foreignKey": ""
     }
   },
   "acls": [],
