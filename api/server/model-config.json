@@ -14,30 +14,31 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongodb",
+    "public": false
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
-    "public": false
+    "dataSource": "mongodb",
+    "public": true
   },
   "user": {
     "dataSource": "mongodb",
-    "public": false
+    "public": true
   },
   "campaign": {
     "dataSource": "mongodb",

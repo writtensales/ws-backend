@@ -12,6 +12,7 @@
     "name": "mongodb",
     "user": "ws",
     "useNewUrlParser": true,
+    "useUnifiedTopology": true,
     "connector": "mongodb"
   }
 }

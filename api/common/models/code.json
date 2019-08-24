@@ -16,6 +16,11 @@
     },
     "answer": {
       "type": "string"
+    },
+    "code_tag": {
+      "type": "string",
+      "required": true,
+      "default": "code"
     }
   },
   "validations": [],

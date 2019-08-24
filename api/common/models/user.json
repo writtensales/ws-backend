@@ -17,6 +17,14 @@
     },
     "payment": {
       "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "required": true,
+      "default": "trial"
+    },
+    "lastLoggedIn": {
+      "type": "date"
     }
   },
   "validations": [],
