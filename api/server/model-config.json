@@ -67,5 +67,9 @@
   "code": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "menu": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

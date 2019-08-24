@@ -1,0 +1,25 @@
+{
+  "name": "menu",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "created": {
+      "type": "date"
+    },
+    "updated": {
+      "type": "date"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "default"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
