@@ -25,6 +25,12 @@
     },
     "lastLoggedIn": {
       "type": "date"
+    },
+    "created": {
+      "type": "date"
+    },
+    "updated": {
+      "type": "date"
     }
   },
   "validations": [],

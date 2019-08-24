@@ -21,6 +21,12 @@
       "type": "string",
       "required": true,
       "default": "code"
+    },
+    "created": {
+      "type": "date"
+    },
+    "updated": {
+      "type": "date"
     }
   },
   "validations": [],

@@ -23,6 +23,12 @@
     },
     "starred": {
       "type": "boolean"
+    },
+    "created": {
+      "type": "date"
+    },
+    "updated": {
+      "type": "date"
     }
   },
   "validations": [],

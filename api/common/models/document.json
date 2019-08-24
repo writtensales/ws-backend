@@ -21,6 +21,12 @@
     },
     "text": {
       "type": "string"
+    },
+    "created": {
+      "type": "date"
+    },
+    "updated": {
+      "type": "date"
     }
   },
   "validations": [],
