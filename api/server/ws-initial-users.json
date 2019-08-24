@@ -4,6 +4,7 @@
     "active": true,
     "email": "richardblondet@gmail.com",
     "password": "rich@0123",
-    "role": "admin"
+    "role": "admin",
+    "type": "paid"
   }
 ]
