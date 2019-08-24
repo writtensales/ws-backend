@@ -29,6 +29,11 @@
       "type": "belongsTo",
       "model": "category",
       "foreignKey": ""
+    },
+    "documents": {
+      "type": "hasMany",
+      "model": "document",
+      "foreignKey": ""
     }
   },
   "acls": [],

@@ -28,7 +28,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "bundles": {
+      "type": "hasMany",
+      "model": "bundle",
+      "foreignKey": ""
+    },
+    "campaigns": {
+      "type": "hasMany",
+      "model": "campaign",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

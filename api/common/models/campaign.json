@@ -11,19 +11,31 @@
       "type": "string",
       "required": true
     },
-    "status": {
-      "type": "string",
-      "required": true,
-      "default": "in-progress"
+    "created": {
+      "type": "date"
     },
-    "templates": {
-      "type": [
-        "object"
-      ]
+    "updated": {
+      "type": "date"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "documents": {
+      "type": "hasMany",
+      "model": "document",
+      "foreignKey": ""
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": ""
+    },
+    "research": {
+      "type": "hasMany",
+      "model": "research",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
