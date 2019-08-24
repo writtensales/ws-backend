@@ -29,6 +29,11 @@
       "type": "hasMany",
       "model": "code",
       "foreignKey": ""
+    },
+    "versions": {
+      "type": "hasMany",
+      "model": "document_version",
+      "foreignKey": ""
     }
   },
   "acls": [],

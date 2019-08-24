@@ -1,0 +1,38 @@
+{
+  "name": "document_version",
+  "plural": "document_versions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "notes": {
+      "type": "string"
+    },
+    "parentId": {
+      "type": "string",
+      "required": true
+    },
+    "revision": {
+      "type": "number",
+      "required": true
+    },
+    "text": {
+      "type": "string"
+    },
+    "starred": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "document": {
+      "type": "belongsTo",
+      "model": "document",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
