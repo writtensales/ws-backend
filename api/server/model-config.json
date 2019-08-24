@@ -60,10 +60,6 @@
     "dataSource": "mongodb",
     "public": true
   },
-  "version": {
-    "dataSource": "mongodb",
-    "public": true
-  },
   "code": {
     "dataSource": "mongodb",
     "public": true

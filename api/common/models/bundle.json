@@ -13,10 +13,19 @@
     },
     "created": {
       "type": "date"
+    },
+    "updated": {
+      "type": "date"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

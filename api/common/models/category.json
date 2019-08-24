@@ -16,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "bundles": {
+      "type": "hasMany",
+      "model": "bundle",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
